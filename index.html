@@ -12,7 +12,10 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
+    <script src="https://unpkg.com/lucide@latest"></script>
+<script>
+  lucide.createIcons();
+</script>
   <!-- LOADER -->
   <div id="loader">
     <div class="loader-line"></div>
@@ -205,39 +208,65 @@
 
   <!-- SERVICES -->
   <section class="services section-padding" id="services">
-    <div class="section-title reveal">
-      <p>Our Services</p>
-      <h2>Professional Real Estate Assistance</h2>
+
+  <div class="section-title reveal">
+    <p>Our Services</p>
+    <h2>Professional Real Estate Assistance</h2>
+  </div>
+
+  <div class="services-grid">
+
+    <div class="service-card reveal">
+      <div class="service-icon">
+        <i data-lucide="building-2"></i>
+      </div>
+      <h3>Property Buying</h3>
+      <p>Premium residential properties curated for modern living.</p>
     </div>
 
-    <div class="services-grid">
-
-      <div class="service-card reveal">
-        <h3>Property Buying</h3>
+    <div class="service-card reveal">
+      <div class="service-icon">
+        <i data-lucide="key-round"></i>
       </div>
-
-      <div class="service-card reveal">
-        <h3>Rental Assistance</h3>
-      </div>
-
-      <div class="service-card reveal">
-        <h3>Commercial Spaces</h3>
-      </div>
-
-      <div class="service-card reveal">
-        <h3>Property Consultation</h3>
-      </div>
-
-      <div class="service-card reveal">
-        <h3>Documentation Support</h3>
-      </div>
-
-      <div class="service-card reveal">
-        <h3>Site Visits</h3>
-      </div>
-
+      <h3>Rental Assistance</h3>
+      <p>Helping tenants and owners with seamless rental solutions.</p>
     </div>
-  </section>
+
+    <div class="service-card reveal">
+      <div class="service-icon">
+        <i data-lucide="briefcase-business"></i>
+      </div>
+      <h3>Commercial Spaces</h3>
+      <p>Luxury office and investment opportunities in Navi Mumbai.</p>
+    </div>
+
+    <div class="service-card reveal">
+      <div class="service-icon">
+        <i data-lucide="badge-dollar-sign"></i>
+      </div>
+      <h3>Property Consultation</h3>
+      <p>Professional market insights and investment guidance.</p>
+    </div>
+
+    <div class="service-card reveal">
+      <div class="service-icon">
+        <i data-lucide="file-text"></i>
+      </div>
+      <h3>Documentation Support</h3>
+      <p>End-to-end assistance for paperwork and verification.</p>
+    </div>
+
+    <div class="service-card reveal">
+      <div class="service-icon">
+        <i data-lucide="map-pinned"></i>
+      </div>
+      <h3>Site Visits</h3>
+      <p>Personalized property tours with expert consultation.</p>
+    </div>
+
+  </div>
+
+</section>
 
   <!-- TESTIMONIALS -->
   <section class="testimonials section-padding">
@@ -277,26 +306,65 @@
 
   <!-- LOCATION -->
   <section class="location section-padding">
-    <div class="section-title reveal">
-      <p>Our Office</p>
-      <h2>Visit Us in CBD Belapur</h2>
-    </div>
 
-    <div class="location-grid reveal">
-      <iframe
-        src="https://maps.google.com/maps?q=CBD%20Belapur%20Navi%20Mumbai&t=&z=13&ie=UTF8&iwloc=&output=embed"
-        loading="lazy">
-      </iframe>
+  <div class="location-wrapper reveal">
 
-      <div class="address-card">
-        <h3>Pranjal Enterprises</h3>
-        <p>CBD Belapur, Navi Mumbai</p>
-        <p>+91 98765 43210</p>
-        <p>contact@pranjalenterprises.com</p>
-        <p>Mon - Sat : 10 AM - 7 PM</p>
+    <!-- LEFT PANEL -->
+    <div class="location-info">
+
+      <div class="location-logo">
+        <h2>PRANJAL</h2>
+        <span>ENTERPRISES</span>
       </div>
+
+      <div class="info-item">
+        <div class="info-icon">📍</div>
+
+        <div>
+          <h4>CBD Belapur, Navi Mumbai</h4>
+          <p>Maharashtra, India</p>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <div class="info-icon">📞</div>
+
+        <div>
+          <h4>+91 98765 43210</h4>
+          <p>Call us for any queries</p>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <div class="info-icon">✉️</div>
+
+        <div>
+          <h4>contact@pranjalenterprises.com</h4>
+          <p>We reply within 24 hours</p>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <div class="info-icon">🕒</div>
+
+        <div>
+          <h4>Mon - Sat : 10 AM - 7 PM</h4>
+          <p>Sunday Closed</p>
+        </div>
+      </div>
+
     </div>
-  </section>
+
+    <!-- RIGHT IMAGE -->
+    <div class="location-image">
+      <img
+        src="https://images.unsplash.com/photo-1600585154363-67eb9e2e2099?q=80&w=1600&auto=format&fit=crop"
+        alt="Luxury Office">
+    </div>
+
+  </div>
+
+</section>
 
   <!-- CONTACT -->
   <section class="contact section-padding" id="contact">
@@ -340,5 +408,10 @@
   </footer>
 
   <script src="script.js"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+    lucide.createIcons();
+    </script>
 </body>
 </html>
