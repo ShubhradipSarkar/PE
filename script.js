@@ -45,3 +45,30 @@ const form = document.getElementById("contactForm");
 form.addEventListener("submit", () => {
   alert("Your enquiry has been submitted successfully.");
 });
+
+function sendToWhatsapp() {
+
+  const name = document.getElementById("name").value;
+
+  const phone = document.getElementById("phone").value;
+
+  const message = document.getElementById("message").value;
+
+  const whatsappMessage =
+`Hi Pranjal Enterprises,
+
+Name: ${name}
+Phone: ${phone}
+
+Message:
+${message}`;
+
+  const encodedMessage =
+    encodeURIComponent(whatsappMessage);
+
+  window.open(
+    `https://wa.me/916294537321?text=${encodedMessage}`,
+    "_blank"
+  );
+
+}

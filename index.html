@@ -368,30 +368,31 @@
 
   <!-- CONTACT -->
   <section class="contact section-padding" id="contact">
-    <div class="section-title reveal">
-      <p>Get In Touch</p>
-      <h2>Let’s Find Your Ideal Property</h2>
-    </div>
 
-    <form class="contact-form reveal" action="https://api.web3forms.com/submit" method="POST" id="contactForm">
-      <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+  <div class="section-title reveal">
+    <p>Get In Touch</p>
+    <h2>Let’s Find Your Ideal Property</h2>
+  </div>
 
-      <input type="text" name="name" placeholder="Your Name" required>
+  <div class="contact-form reveal">
 
-      <input type="tel" name="phone" placeholder="Phone Number" required>
+    <input type="text" id="name" placeholder="Your Name" required>
 
-      <textarea name="message" rows="5" placeholder="Your Message"></textarea>
+    <input type="tel" id="phone" placeholder="Phone Number" required>
 
-      <button type="submit">Send Enquiry</button>
+    <textarea
+      id="message"
+      rows="5"
+      placeholder="Your Message">
+    </textarea>
 
-      <a
-        href="https://wa.me/919876543210?text=Hi%20Pranjal%20Enterprises%2C%20I%20am%20interested%20in%20your%20properties"
-        class="whatsapp-enquiry"
-        target="_blank">
-        Instant WhatsApp Enquiry
-      </a>
-    </form>
-  </section>
+    <button onclick="sendToWhatsapp()">
+      Send WhatsApp Enquiry
+    </button>
+
+  </div>
+
+</section>
 
   <!-- FLOATING BUTTONS -->
   <a href="https://wa.me/916294537321" class="whatsapp-btn">WhatsApp</a>
