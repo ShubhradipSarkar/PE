@@ -522,17 +522,25 @@ body {
   line-height: 1.5;
 }
 
-.location-image {
-  min-height: 540px;
-}
-
-.location-image img {
+.location-map iframe {
   width: 100%;
   height: 100%;
 
-  object-fit: cover;
+  min-height: 540px;
+
+  border: none;
 
   display: block;
+}
+
+/* MOBILE */
+
+@media(max-width: 992px) {
+
+  .location-map iframe {
+    min-height: 320px;
+  }
+
 }
 
 /* MOBILE */
